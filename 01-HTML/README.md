@@ -106,9 +106,7 @@ a标签：
 
 
 常见页面整体的划分：
-
-![](https://github.com/lesenelir/ByteDance-WebCampers/blob/master/01-HTML/pic/pic01.jpg?raw=true)
-
+![Alt Text](https://github.com/lesenelir/ByteDance-WebCampers/blob/master/01-HTML/pic/pic01.jpg?raw=true)
 
 
 语义化标签：
