@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <style>
+      .container {
+        /*container容器已经变成flex容器*/
+        display: flex;
+        /*flex-direction: column;*/   /*flex-direction决定主轴的方向*/
+        /*justify-content: right;*/
+        border: 2px solid #966;
+      }
+
+      .a, .b, .c {
+        text-align: center;
+        padding: 1em;
+      }
+
+      .a {
+        background: #fcc;
+        flex-grow: 2;
+      }
+
+      .b {
+        background: #cfc;
+        order: -1;
+        flex-grow: 1;
+      }
+
+      .c {
+        background: #ccf;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="a">A</div>
+      <div class="b">B</div>
+      <div class="c">C</div>
+    </div>
+
+  </body>
+</html>
