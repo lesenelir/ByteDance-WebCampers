@@ -107,7 +107,7 @@ a标签：
 
 常见页面整体的划分：
 
-![](./pic/pic01.jpg)
+![](https://github.com/lesenelir/ByteDance-WebCampers/blob/master/01-HTML/pic/pic01.jpg)
 
 
 
