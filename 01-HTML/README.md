@@ -106,7 +106,7 @@ a标签：
 
 
 常见页面整体的划分：
-![理解HTML01](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/01-HTML/pic/pic01.jpg)
+![理解HTML01](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/01-HTML/pic/pic01.png)
 
 
 
