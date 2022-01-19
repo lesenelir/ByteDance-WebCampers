@@ -8,7 +8,7 @@
 
 前端开发的时代划分：
 
-![前端开发时代划分]()
+![前端开发时代划分](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/04-Web/pic/1.png)
 
 ---
 
