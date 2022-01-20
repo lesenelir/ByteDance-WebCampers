@@ -4,7 +4,7 @@
 
 
 
-![前端Debug特点](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/05-DeBug/pic/01.png)
+![前端Debug特点](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/05-DeBug/pic/01.png)
 
 
 
@@ -33,7 +33,7 @@
 - 选中具有伪类的元素，点击 `:hov`
 - DOM 树右键菜单，选择 `Force State`
 
-![强制伪类](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/05-DeBug/pic/02.png)
+![强制伪类](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/05-DeBug/pic/02.png)
 
 
 
@@ -63,7 +63,7 @@ console.info("welcome to my note")
 console.log('%s %o,%c%s','hello',{name:'tom',age:18},'font-size:30px; color: red', 'welcome to my note')
 ```
 
-![console](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/05-DeBug/pic/03.png)
+![console](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/05-DeBug/pic/03.png)
 
 **console具体用法：**
 
@@ -77,15 +77,15 @@ console.log('%s %o,%c%s','hello',{name:'tom',age:18},'font-size:30px; color: red
 
 **界面：**
 
-![sourcetab](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/05-DeBug/pic/04.png)
+![sourcetab](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/05-DeBug/pic/04.png)
 
 
 
 **BreakPoint 与 Watch：**
 
-![debug](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/05-DeBug/pic/05.png)
+![debug](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/05-DeBug/pic/05.png)
 
-![debug](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/05-DeBug/pic/06.png)
+![debug](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/05-DeBug/pic/06.png)
 
 
 
@@ -109,7 +109,7 @@ console.log('%s %o,%c%s','hello',{name:'tom',age:18},'font-size:30px; color: red
 
 **四、Performance面板**
 
-![performance](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/05-DeBug/pic/07.png)
+![performance](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/05-DeBug/pic/07.png)
 
 区域1: 控制面板
 
@@ -131,7 +131,7 @@ console.log('%s %o,%c%s','hello',{name:'tom',age:18},'font-size:30px; color: red
 
 可以查看所有页面请求的信息
 
-![network](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/05-DeBug/pic/08.png)
+![network](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/05-DeBug/pic/08.png)
 
 区域一中的no throtling 可以设置网速
 
@@ -141,7 +141,7 @@ console.log('%s %o,%c%s','hello',{name:'tom',age:18},'font-size:30px; color: red
 
 浏览器本地存储面板
 
-![application](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/05-DeBug/pic/09.png)
+![application](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/05-DeBug/pic/09.png)
 
 
 
@@ -233,5 +233,4 @@ Whistle：基于 NOde 实现跨平台 Web 调试代理工具
 
 **一、线上及时修改 Over rides**
 
-![overrides](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/05-DeBug/pic/10.png)
-
+![overrides](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/05-DeBug/pic/10.png)
