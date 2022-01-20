@@ -68,35 +68,35 @@ a标签：
 
 -  <input> 标签中type属性：
 
-    - text、password
+  - text、password
 
-    - range、number、date
+  - range、number、date
 
-    - checkbox 多选框
+  - checkbox 多选框
 
-        - ```HTML 
-          <p>
-            <label>
-              <input type="checkbox" >
-            </label> 篮球
-            <label>
-              <input type="checkbox" checked>
-            </label> 足球
-          </p>
-          ```
+    - ```HTML 
+      <p>
+        <label>
+          <input type="checkbox" >
+        </label> 篮球
+        <label>
+          <input type="checkbox" checked>
+        </label> 足球
+      </p>
+      ```
 
-    - radio 单选框
+  - radio 单选框
 
-        - ```HTML
-          <p>
-            <label for="1">
-              <input type="radio" name="sex" id="1" checked>男
-            </label>
-            <label for="2">
-              <input type="radio" name="sex" id="2">女
-            </label>
-          </p>
-          ```
+    - ```HTML
+      <p>
+        <label for="1">
+          <input type="radio" name="sex" id="1" checked>男
+        </label>
+        <label for="2">
+          <input type="radio" name="sex" id="2">女
+        </label>
+      </p>
+      ```
 
     - 不同radio 单选框的内容由name属性进行关联
     - <label>属性可以通过设置for属性进行关联对应<input>标签中的id属性
@@ -105,10 +105,9 @@ a标签：
 
 
 
-常见页面整体的划分：
+**常见页面整体的划分：**
 
-![理解HTML](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/01-HTML/pic/pic01.png)
-
+![](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/01-HTML/pic/pic01.png)
 
 
 
@@ -116,10 +115,10 @@ a标签：
 
 - 定义：HTML中的元素、属性及属性值都拥有某些含义。开发者应该遵循语义来编写HTML
 - 好处：
-    - 代码可读性
-    - 可维护性
-    - 搜索引擎优化
-    - 提升无障碍性
+  - 代码可读性
+  - 可维护性
+  - 搜索引擎优化
+  - 提升无障碍性
 
 
 
@@ -127,4 +126,3 @@ src和href的区别：
 
 - 嵌入页面内部，用 src
 - 访问外部链接，用 href
-
