@@ -46,7 +46,7 @@
 
 **JS动画函数封装**
 
-![01](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/07-CSSAnimation/pic/01.png)
+![01](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/07-CSSAnimation/pic/01.png)
 
 
 
