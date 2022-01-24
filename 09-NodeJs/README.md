@@ -51,7 +51,7 @@
 
 
 
-![nodejs运行时结构](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/09-NodeJs/pic/01.png)
+![nodejs运行时结构](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/09-NodeJs/pic/01.png)
 
 
 
@@ -69,7 +69,7 @@
 
   - 当 Node.js 执行IO操作时，**会在响应返回后恢复操作**，而不是阻塞线程并占用额外内存等待
 
-    ![02](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/09-NodeJs/pic/02.png)
+    ![02](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/09-NodeJs/pic/02.png)
 
 - 单线程
 
