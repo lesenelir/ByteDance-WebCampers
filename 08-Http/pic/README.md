@@ -6,7 +6,7 @@
 
 **初识HTTP：**
 
-![01](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/01.png)
+![01](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/01.png)
 
 - HTTP协议名为：超文本传输协议
 - HTTP协议是应用层协议，在底层是基于TCP作为传输协议（传输层协议有TCP和UDP）
@@ -24,7 +24,7 @@
 
 **02-1 协议发展：**
 
-![02](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/02.png)
+![02](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/02.png)
 
 > 其中HTTP/1.1版本是公认的标准版本，且使用最久的版本
 
@@ -32,7 +32,7 @@
 
 **02-2 报文分析：**
 
-![03](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/03.png)
+![03](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/03.png)
 
 - 上图是req和res的报文，包含：起始行、请求头、实体行
 - Req起始行
@@ -42,7 +42,7 @@
 
 
 
-![04](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/04.png)
+![04](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/04.png)
 
 - GET请求：获取数据
 - POST请求：提交数据
@@ -51,30 +51,30 @@
 
 
 
-![05](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/05.png)
+![05](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/05.png)
 
 
 
-![06](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/06.png)
+![06](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/06.png)
 
 
 
-![07](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/07.png)
+![07](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/07.png)
 
 - HTTP请求是一个无状态的请求，但在实际生活中，希望HTTP请求可以带一些状态信息，比如用户是否登陆
 - 浏览器会把已有权限的cookie默认带上
 
 
 
-![08](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/08.png)
+![08](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/08.png)
 
 
 
-![09](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/09.png)
+![09](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/09.png)
 
 
 
-![10](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/10.png)
+![10](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/10.png)
 
 - cookie可以获得用户的相关信息
 - response中的set-cookie 是 server返回浏览器设置的信息
@@ -125,17 +125,17 @@
 
 - 跨域解决方案：
   - CORS
-    - ![11](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/11.png)
+    - ![11](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/11.png)
   - 代理服务器
     - 同源策略是浏览器的安全策略，不是HTTP的
-    - ![12](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/12.png)
+    - ![12](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/12.png)
   -  Iframe（较少使用）
 
 
 
 **03-3 网站登陆，记住用户的状态信息：（鉴权）**
 
-![13](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/13.png)
+![13](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/13.png)
 
 - Cookie + Session ：
   - 登陆成功会发起一个提交的请求，把账户名、密码提交给server
@@ -155,7 +155,7 @@
 
 - 单点登录（SSO）
 
-![14](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/14.png)
+![14](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/14.png)
 
 
 
@@ -167,13 +167,13 @@
 
 **04-1 浏览器 AJAX之XHR**
 
-![15](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/15.png)
+![15](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/15.png)
 
 
 
 **04-2 浏览器 AJAX之Fetch**
 
-![16](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/16.png)
+![16](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/16.png)
 
 
 
@@ -186,7 +186,7 @@
 
 **04-4 axios请求库**
 
-![17](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/17.png)
+![17](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/17.png)
 
 
 
@@ -208,23 +208,4 @@
 
 - QUIC
 
-  ![18](/Users/shuuhiko/GitHub-Projects/ByteDance-WebCampers/08-Http/pic/18.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  ![18](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/18.png)
