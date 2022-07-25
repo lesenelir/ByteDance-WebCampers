@@ -12,6 +12,9 @@
 
 ![CSS如何工作](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/02-CSS/pic/pic01.png)
 
+- 浏览器加载HTML，并对HTML进行解析，解析成一个DOM树
+- 解析HTML过程中加载CSS、解析CSS，解析DOM树每一个节点的CSS样式，得到一个render树（计算每一个节点的位置和样式）
+
 
 
 **选择器：**
@@ -41,23 +44,23 @@
 
 - 伪类选择器 :
 
-    - 状态伪类
+    - **状态伪类**
         - **用户与标签节点进行交互**时使元素处于不同的状态，根据不同的状态来触发
         - a:link、a:hover、a:visited、a:active
         - :focus （输入框输入状态）
-    - 结构伪类
+    - **结构伪类**
         - 根据**节点在DOM树中的位置**来决定是否选择该节点
         - li:first-child、li:last-child
 
 - 选择器的组合 Combinators
 
-| 名称             | 语法 | 说明                      | 示例        |
-| ---------------- | ---- | ------------------------- | ----------- |
-| 直接             | AB   | 同时满足A和B              | input:focus |
-| 后代             | A B  | 选中B，若B是A的后代       | nav a       |
-| 亲子（直接后代） | A>B  | 选中B，若B是A的直接子元素 | section>p   |
-| 兄弟             | A~B  | 选中B，若B在A后且与A同级  | h2~p        |
-| 相邻             | A+B  | 选中B，若B紧跟在A后       | h2+p        |
+| 名称             | 语法 | 说明                        | 示例                     |
+| ---------------- | ---- | --------------------------- | ------------------------ |
+| 直接             | AB   | 同时满足A和B                | input:focus、input.error |
+| 后代             | A B  | 选中B，若B是A的后代（子孙） | nav a                    |
+| 亲子（直接后代） | A>B  | 选中B，若B是A的直接子元素   | section>p                |
+| 兄弟             | A~B  | 选中B，若B在A后且与A同级    | h2~p                     |
+| 相邻             | A+B  | 选中B，若B紧跟在A后         | h2+p                     |
 
 > 兄弟选择器：A~B：A，B选择器是要同级，有相同的父元素，且B元素在A元素的后边【可能选择很多标签】
 >
@@ -67,8 +70,8 @@
 
     - ```CSS
       [type="checkbox"], [type="radio"] {
-    	box-sizing: border-box;
-    	padding: 0
+    		box-sizing: border-box;
+    		padding: 0
       }
       ```
 
@@ -77,7 +80,7 @@
 **颜色：**
 
 - RGB
-    - rgb(x, x, x)    对应红绿蓝的数值
+    - rgb(x, x, x)    对应红绿蓝的数值 0～255
     - #000000    每两位一组，取值 00 ～ ff
 - HSL
     - **Hue 色相**，是色彩的基本属性，取值0~360（环）
@@ -88,6 +91,23 @@
 - alpha透明度，取值0~1；1代表不透明，0代表完全透明
     - rgb**a**(255,0,0,0.23)
     - hsl**a**(0,100%,50%,0.66)
+    - 十六进制： #ff0000**78** （78代表十六进制）
+
+
+
+**字体 font-family**
+
+```css
+h1 {
+	font-family: Optima, Georgia, serif;
+}
+```
+
+- 字体family是设置多个
+
+>字体family设置多个原因：不同终端浏览网页的设备是不同的，终端设备不可能有所有字体。									所以可以写多个字体，让终端设备自己一个一个进行匹配，进行设置字体。
+
+- serif 和 sans-serif 和 monospace 都是通用字体族（一种字体的风格）
 
 
 
@@ -105,7 +125,7 @@
 
         - em的值并不是固定的
 
-        - em会继承父级元素的字体大小
+        - em会继承父级元素的字体大小（相对于父级字体大小）
 
       ```css
       section {
@@ -133,11 +153,18 @@
 
 
 
+**字重font-weight：**
+
+- 值从100 ～ 900
+- 字重和font-family有关
+
+
+
 **行高 line-height:**
 
-- 设置行间距
+- 设置行间距（多段文字阅读）
 
-- line-height 有数值则按照数值显示；line-height没有数值，则表示font-size的倍数
+- line-height 有数值则按照数值显示；line-height没有数值，则表示font-size的倍数（没有单位是字体大小的倍数）
 
     - ```CSS
       h1 {
@@ -201,6 +228,8 @@
 
 - 高优先级的样式会覆盖低优先级的样式
 
+- 可以通过CSS选择器来实现css的复用
+
 - | 选择器           | 权重 |
   | ---------------- | ---- |
   | 通配符*、继承    | 0    |
@@ -214,9 +243,18 @@
 
 **继承：**
 
-- 定义：某些属性会自动继承其父元素的**计算值**，除非显式指定一个值
+- 定义：**某些属性会自动继承其父元素的计算值**，除非显式指定一个值
 - 字体相关的属性可以继承
-- 宽高、盒子大小这些属性不可以继承
+  - font-size
+  - color
+
+- 宽高、盒子大小这些盒模型属性不可以继承
+
+
+
+**CSS求值过程**
+
+**![CSS求值过程](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/02-CSS/pic/pic02.png)**
 
 
 
@@ -234,9 +272,23 @@
 
         - ```HTML
           <body> <article> <div> <main> <section> <ul> <li> <p>
-         ```
+          ```
+        - ```css
+          display: block
+          ```
 
-        - `diplay: block;`
+        - 块级排版上下文（block formatting context BFC）
+        - 某些容器会创建一个BFC： 
+          - 根元素
+          - 浮动、绝对定位、inline-block
+          - flex子项和grid子项
+          - overflow 值不是visible 的块盒
+          - display: flow-root
+        - BFC 排版规则:
+          - 盒子从上到下摆放
+          - 垂直margin合并
+          - BFC内盒子的margin 不会与BFC外的盒子进行合并（可以用于：防止margin重叠）
+          - BFC不会和浮动元素重叠（用于：清除浮动）
 
     - 行级
 
@@ -245,20 +297,36 @@
        - 盒模型中的width和height不适用
 
         - ```html
-          <span> <em> <strong> <cite> <code>
-        ```
+          <span> <em> <strong> <cite> <code> 
+          ```
+       - ```css
+         display: inline;
+         ```
 
-        - `display: inline;`
+       - 行级排版上下文（IFC） - 排版规则：
+
+         - 盒子在一行内水平摆放
+         - 一行放不下，换行显示
+         - text-align 决定一行内盒子的水平对齐
+         - vertical-align 决定一个盒子在行内的垂直对齐
+         - 避开float元素
 
     - 表格布局
 
     - FlexBox
 
+       - 一种新的排版上下文
+
     - Grid布局
 
 - 浮动
 
+    - 文字环绕效果
+
 - 绝对定位
+
+    - 可以做到覆盖在常规流上的效果
+
 
 
 
@@ -267,7 +335,7 @@
 | display 属性 | 特点                                                         |
 | ------------ | ------------------------------------------------------------ |
 | block        | 块级盒子                                                     |
-| inline       | 行级盒子                                                     |
+| inline       | 行级盒子 （不可以设置宽高）                                  |
 | inline-block | **本身是行级**，可放在行盒中；**可设置宽高**；作为整体，**不会被拆成多行** |
 | none         | 排版时被完全忽略                                             |
 | flex         | CSS3新提出的**弹性**布局                                     |
@@ -278,6 +346,16 @@
 **盒模型：**
 
 - 标准盒模型的宽高属性width、height 设置的是content内容区的宽高
+
+    - width 取值： 长度、百分数、auto
+
+        - 百分数：相当于当前盒子所在容器的content box 宽度
+
+    - height取值： 长度、百分数、auto
+
+        - 百分数： 相当于盒子所在容器的content box 高度
+        - >容器有指定的高度时，百分数才会生效
+
 - box-sizing属性：
     - box-sizing: border-box;  设置这个属性后，盒子的宽高width、height设置的是整个盒子的宽高（包含padding 和 border） 【推荐】
     - box-sizing属性的默认值是content-box，即  box-sizing: content-box;
@@ -291,7 +369,7 @@
 
 **FlexBox 排版上下文/弹性布局:**
 
-- flexBox是一种新的排版上下文
+- flexBox是一种新的排版上下文（不会遵循BFC、IFC规则）
 
 - display: flex;
 
@@ -325,6 +403,8 @@
     - space-around: 中间和两边都有空格
     - space-evenly:  中间两边都有空格
 
+**![justify-content属性](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/02-CSS/pic/pic03.png)**
+
 - align-items  属性： 决定flex盒子内项目在侧轴的对齐方式            （垂直方向）
 
     - flex-start : 按照**侧轴的起点**方向摆放
@@ -332,6 +412,8 @@
     - center
     - stretch:   把每个元素尽可能的拉伸高度
     - baseline
+
+**![align-items属性](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/02-CSS/pic/pic04.png)**
 
 - order 属性： 决定flex盒子内项目的排列摆放顺序
 
@@ -411,9 +493,13 @@
 | position 属性 | 含义                                                         |
 | ------------- | ------------------------------------------------------------ |
 | static        | 默认值，非定位元素                                           |
-| relative      | 相对定位，相对原始位置偏移，**不脱离文档流**，不影响流内其他元素 |
+| relative      | 相对定位，相对自身原始位置偏移，**不脱离文档流**，不影响流内其他元素 |
 | absolute      | 绝对定位，**脱离文档流**，相对最近有定位的祖先元素的定位     |
 | fixed         | 相对于屏幕 / 视口的固定定位，**脱离文档流**                  |
+| sticky        | 粘性定位，粘性定位元素依赖于用户的滚动，在relative 和 fixed 定位之间切换 |
+
+- 偏移属性：top left bottom right
+- fixed 主要运用于：导航栏固定
 
 
 

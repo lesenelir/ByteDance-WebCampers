@@ -31,12 +31,26 @@
 ### HTML
 
 > HTML 全称：HyperText Markup Language               HyperText包含：图片、标题、链接、表格
+>
+> HTML 是呈现标题的
 
 
 
 DOM树：
 
 - HTML描述了一个页面的结构，浏览器会把HTML结构字符串解析转换DOM树形结构
+- 把HTML代码转换成DOM树结构，树中的每一个节点都是DOM节点
+
+
+
+列表标签：
+
+- 有序列表 ol>li
+- 无序列表 ul>li
+- key value列表
+  - dl 定义列表
+  - dt 列表key
+  - dd 列表value
 
 
 
@@ -58,7 +72,11 @@ a标签：
 <video src="" controls> </video>
 ```
 
+
+
 - alt属性： 以文字的形式去形容img
+- audio 音频标签
+- video 视频标签
 
 
 
@@ -105,6 +123,14 @@ a标签：
 
 
 
+引用标签：
+
+- blockquote标签 块级引用
+- cite标签 短引用 （具体章节）
+- q标签 短引用
+
+
+
 **常见页面整体的划分：**
 
 ![](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/01-HTML/pic/pic01.png)
@@ -113,12 +139,15 @@ a标签：
 
 语义化标签：
 
-- 定义：HTML中的元素、属性及属性值都拥有某些含义。开发者应该遵循语义来编写HTML
+- 定义：HTML中的标签元素、属性及属性值都拥有某些含义。开发者应该遵循语义来编写HTML
 - 好处：
   - 代码可读性
   - 可维护性
-  - 搜索引擎优化
+  - 搜索引擎优化 - 提取关键词，排序
+    - 搜索引擎会抓取HTML的关键词，进行排序
+    - header 和 div 权重值不一样，有利于SEO
   - 提升无障碍性
+    - 给盲人读取页面内容
 
 
 
