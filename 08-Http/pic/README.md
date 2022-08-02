@@ -47,7 +47,7 @@
 - GET请求：获取数据
 - POST请求：提交数据
 - 安全的（safe）Method：不会修改服务器的数据的方法：GET、HEAD、OPTIONS
-- 幂等的（idempotent）Method：同样的请求被执行一次与连续执行多次效果是一样的，服务器的状态也是一样的，所有 safe 的方法都是 idempotent 的：GET、HEAD、OPTIONS、DELETE
+- 幂等的（idempotent）Method：同样的请求被执行一次与连续执行多次效果是一样的，服务器的状态也是一样的，所有 safe 的方法都是 idempotent 的：GET、HEAD、OPTIONS、DELETE、PUT
 
 
 
@@ -71,6 +71,17 @@
 
 
 ![09](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/09.png)
+
+缓存：
+
+- 强缓存：如果本地有，则直接使用
+  - Cache-Control:
+    - no-cache 协商缓存验证
+    - no-store 不实用任何缓存
+    - Max-age 存储的最大周期
+-  协商缓存：本地有缓存，但缓存是不是最新的要根据Server端通信验证，进行协商
+
+
 
 
 
@@ -114,7 +125,7 @@
 **03-1 静态资源：**
 
 - 静态资源部署方案：缓存 + CDN + 文件名hash
-- CDN（Content Delivery Network）：通过用户就近性和服务器负载的判断，CDN 确保内容以一种极为高效的方式为用户的请求提供服务
+- CDN（Content Delivery Network）：通过用户就近性和服务器负载的判断，CDN 确保内容以一种极为高效的方式为用户的请求提供服务（更快拿到资源的一种方式）
 - 文件名hash 为了防止因缓存而出现的静态资源不更新的问题
 
 
@@ -134,6 +145,8 @@
 
 
 **03-3 网站登陆，记住用户的状态信息：（鉴权）**
+
+>HTTP 无状态请求，给请求带上状态
 
 ![13](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/08-Http/pic/13.png)
 
