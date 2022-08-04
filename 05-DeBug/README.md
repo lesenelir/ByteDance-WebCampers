@@ -45,7 +45,8 @@
 - console.debug （调试）
 - console.info
 - console.table ：具体化的展示JSON和数组数据
-- 占位符
+- console.dir 类似文件树的方式来打印
+- console.log 占位符
   - 给日志添加样式，可以突出重要信息
   - %s: 字符串
   - %o: 对象
@@ -81,6 +82,12 @@ console.log('%s %o,%c%s','hello',{name:'tom',age:18},'font-size:30px; color: red
 
 
 
+- 可以在source界面的源代码左侧点击，设置断点
+
+- Watch可以添加查看变量的值，即对变量进行控制
+
+
+
 **BreakPoint 与 Watch：**
 
 ![debug](https://raw.githubusercontent.com/lesenelir/ByteDance-WebCampers/master/05-DeBug/pic/05.png)
@@ -89,7 +96,7 @@ console.log('%s %o,%c%s','hello',{name:'tom',age:18},'font-size:30px; color: red
 
 
 
-- 使用关键字debugger或代码预览区域的行号可以设置断点
+- 使用关键字debugger或代码预览区域的行号可以设置断点 （刷新）
 
 - 执行到断点处时代码暂停执行
 - Watch可以添加查看变量的值，即对变量进行控制
@@ -100,10 +107,16 @@ console.log('%s %o,%c%s','hello',{name:'tom',age:18},'font-size:30px; color: red
 
 
 
-**Scope 与 Call Stack**
+**Scope（作用域） 与 Call Stack（调用栈）**
 
 - Scope 可以查看作用域列表（包含闭包）
 - Call Stack 可以查看当前JavaScript代码的调用栈
+
+
+
+**Network**
+
+- 坐弱网的适配 
 
 
 
@@ -124,6 +137,16 @@ console.log('%s %o,%c%s','hello',{name:'tom',age:18},'font-size:30px; color: red
 - Frames：帧线程
 - Main：主线程，负责执行 Javascript，解析 HTML/CSS ，完成绘制
 - Raster：Raster线程，负责完成某个 layer 或者某些块（title）的绘制。
+
+区域四：统计面板
+
+
+
+解决性能问题的方式：
+
+>页面卡顿 -> 查看FPS指标 -> 寻找性能瓶颈 -> 优化代码
+
+
 
 
 
@@ -224,6 +247,16 @@ Fiddler：与 Charles 类似，适合 windows 平台
 spy-debugger：远程调试手机页面，抓包
 
 Whistle：基于 NOde 实现跨平台 Web 调试代理工具
+
+
+
+---
+
+### Nodejs调试
+
+>Inspector Protocol + Chrome Devtool
+
+
 
 ---
 
