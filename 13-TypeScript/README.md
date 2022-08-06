@@ -156,7 +156,7 @@ let user: [string, number] = ['Joe', 20];
 user.push(30);
 ```
 
-### Interface 接口
+### Interface 接口（对象类型）
 
 接口是对对象的形状（shape）的描述，使用接口可以帮助我们定义 Object 类型。
 
@@ -189,6 +189,8 @@ Joe.address = 'wuhan'; // 添加任意属性
 Interface 像是一种规范和契约，如果与其不同则会发出警告。
 
 ### 函数
+
+>interface 不仅可以对对象进行类型声明，还可以对函数进行类型声明
 
 函数是一等公民。函数和其他类型的对象一样，可以作为参数、存入数组、赋值给变量等等。
 
@@ -774,3 +776,4 @@ let Joe3: IOmit = { age: 20 }
 2. 配置 tsconfig.js 文件
 3. 使用 npm 安装 tsc
 4. 使用 tsc 运行编译得到 js 文件
+
